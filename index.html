@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Motivation App</title>
     <style>
   body {
     font-family: Arial;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    background-color: #f5f5f5;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 20px 0;
   }
 
   button {
-    padding: 10px 20px;
+    padding: 12px 24px;
+    font-size: 16px;
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #333;
   }
 </style>
-    <title>My First Page</title>
   </head>
-  <body>
-    <h1>Alaina's First Page</h1>
-    <p>I made this.</p>
-  </body>
-</html>
-<h2>About Me</h2>
-<p>I’m learning how to build things.</p>
-
-<h2>Projects</h2>
-<p>Coming soon.</p>
-
-<button onclick="changeText()">Click me</button>
-
 <script>
-  function changeText() {
-    document.querySelector("p").innerText = "You clicked the button!";
+  function newMessage() {
+    const messages = [
+      "You’ve got this!",
+      "Keep going!!",
+      "Small steps still count ;)",
+      "You’re learning fast :)",
+      "Don’t overthink it x)"
+    ];
+
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    document.getElementById("message").innerText = messages[randomIndex];
   }
 </script>
+  <body>
+
+    <h1>Motivation Generator</h1>
+    <p id="message">Click the button to get motivated</p>
+
+    <button onclick="newMessage()">Get message</button>
+
+  </body>
+</html>
+
 
