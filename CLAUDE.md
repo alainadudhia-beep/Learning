@@ -1,0 +1,5 @@
+- Explain everything in plain English (I am a beginner)
+- Always propose a plan before making changes
+- Make the smallest possible change
+- Do not refactor unrelated code
+- After changes, tell me exactly how to test

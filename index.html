@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+  body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+  }
+</style>
+    <title>My First Page</title>
+  </head>
+  <body>
+    <h1>Alaina's First Page</h1>
+    <p>I made this.</p>
+  </body>
+</html>
+<h2>About Me</h2>
+<p>I’m learning how to build things.</p>
+
+<h2>Projects</h2>
+<p>Coming soon.</p>
+
+<button onclick="changeText()">Click me</button>
+
+<script>
+  function changeText() {
+    document.querySelector("p").innerText = "You clicked the button!";
+  }
+</script>
+
