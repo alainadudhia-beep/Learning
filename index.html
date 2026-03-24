@@ -36,15 +36,20 @@
 <script>
   function newMessage() {
     const messages = [
-      "You’ve got this!",
-      "Keep going!!",
+      "You’ve got this 💪",
+      "Keep going!",
       "Small steps still count ;)",
-      "You’re learning fast :)",
-      "Don’t overthink it x)"
+      "You’re learning fast 🧠",
+      "Don’t overthink it x",
+      "This is how you get better...",
+      "Progress > perfection",
     ];
 
     const randomIndex = Math.floor(Math.random() * messages.length);
     document.getElementById("message").innerText = messages[randomIndex];
+
+    const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+document.body.style.backgroundColor = randomColor;
   }
 </script>
   <body>
